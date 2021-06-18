@@ -163,7 +163,7 @@ reasetbtn.addEventListener("click", function () {
 
 //Create function cheack the Grade Point
 function sgpa(num) {
-    if (num == "A+" || (num >= 80 && num <= 100)) {
+  if (num == "A+" || (num >= 80 && num <= 100)) {
         return 4.0
     }
      else if (num == "A+" || (num >= 75 && num <= 79)) {
