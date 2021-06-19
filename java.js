@@ -166,7 +166,7 @@ function sgpa(num) {
   if (num == "A+" || (num >= 80 && num <= 100)) {
         return 4.0
     }
-     else if (num == "A+" || (num >= 75 && num <= 79)) {
+     else if (num == "A" || (num >= 75 && num <= 79)) {
         return 3.75
     }
      else if (num == "A-" || (num >= 70 && num <= 74)) {
