@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National University SGPA & CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+<div class="header">
+    <img src="image_NationalUniversity.png" alt="Logo" class="logo">
+</div>
+
+    <h1> National University SGPA & CGPA Calculator</h1>
+    
+    <div class="input-group">
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="course-code">Course Code:</label>
+        <input type="text" id="course-code" placeholder="Enter Course Code">
+    </div>
+
+    <div class="input-group">
+        <label for="course-name">Course Name:</label>
+        <input type="text" id="course-name" placeholder="Enter Course Name">
+    </div>
+
+    <div class="input-group">
+        <label for="grade">Grade:</label>
+        <select id="grade">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="credit-hour">Credit Hour:</label>
+        <input type="number" id="credit-hour" placeholder="Enter Credit Hour">
+    </div>
+
+    <button id="add-course">Add Course</button>
+
+    <div class="course-list">
+        <table id="course-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                    <th>Credit Hour</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <button id="calculate">Calculate SGPA & CGPA</button>
+    <button id="reset">Reset</button>
+
+    <div class="result">
+        <h3>Result</h3>
+        <div id="sgpa-results"></div>
+        <p>CGPA: <span id="cgpa"></span></p>
+        <p>Total Credit: <span id="total-credit"></span></p>
+        <p>Status: <span id="status" class="status"></span></p>
+        <button id="print-result">Print</button>
+        <button id="download-pdf">Download PDF</button>
+<!-- foter design -->
+            <footer class="foter-design">
+                <p>Copyright &copy; 2024 <a href="https://www.facebook.com/engr.md.mahdiouzzaman.ridoy" target="_blank"> Md. Mahdiouzzaman Ridoy </a> All Rights
+                    Reserved.</p>
+            </footer>
+            <!-- foter end -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
